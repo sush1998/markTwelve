@@ -1,0 +1,56 @@
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    margin: 0;
+}
+
+.app
+{
+    height: 90vh;
+}
+.menu{
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    background-color: white;
+}
+.menu_container
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+}
+
+.menu_item
+{
+    overflow: hidden;
+    width: 10rem;
+    margin: 0.5rem;
+    height: 10rem;
+    background-color: red;
+
+}
+
+@media only screen and (max-width:600px)
+{
+    .menu_container
+    {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto ;
+        grid-template-rows: auto auto auto auto;
+        justify-content: center;
+    }
+
+    .menu_item
+    {
+        width: 80%;
+        height: 6rem;
+        margin: 0.5rem auto;
+    }
+
+}
