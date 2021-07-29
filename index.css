@@ -8,10 +8,22 @@ h1{
     margin: 0;
 }
 
+header
+{
+    margin: 0;
+}
+
+.page_title
+{
+    display: grid;
+    grid-template-columns: 15% auto;
+}
 .app
 {
     height: 90vh;
+    margin: 0;
 }
+
 .menu{
     display: grid;
     justify-content: center;
