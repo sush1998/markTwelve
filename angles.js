@@ -4,6 +4,7 @@ const angle_3=document.querySelector("#angle3")
 const out=document.querySelector("#out")
 const result=document.querySelector("#result")
 const check_btn=document.querySelector("#btn_check_angle")
+const backToHome=document.querySelector("#back_to_home")
 
 function check_angles([...angles])
 {
@@ -30,4 +31,11 @@ check_btn.addEventListener('click',(event)=>
         out.innerHTML=sum
         result.textContent="Yeah! these angles can make a triangle"
     }
+})
+
+
+
+backToHome.addEventListener("click",()=>
+{
+    window.location.href="index.html"
 })
