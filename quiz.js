@@ -1,21 +1,30 @@
 const answers=["isosceles","one","35mm","55","false"]
-
-const quizForm=document.querySelector("#quizForm")
+const quizForm = document.forms[0];
 const questions=document.querySelectorAll(".question_container")
 const btn_quiz_submit=document.querySelector("#btn_quiz_submit")
 
-const selected_options=document.q
 
-
-btn_quiz_submit.addEventListener('click',(event)=>
+quizForm.addEventListener('submit',function(event)
 {
     event.preventDefault()
-    console.group("clicked")
+    console.log("submited")
+    let options_selected=new FormData(quizForm)
     let pos=0
-    let data=new FormData(quizForm)
-    for(let entry of data)
+    let score=0
+    for(let elem of options_selected)
     {
-        console.log(entry[1]==answers[pos])
-        pos+=1
+        if(elem[1]==answers[pos])
+        {
+            console.log(elem[1]+"  "+answers[pos])
+            questions[pos].style.backgroundColor="green"
+            score++
+        }
+        else{
+            questions[pos].style.backgroundColor="red"
+        }
+        pos++
     }
+    console.log("score :"+score)
 })
+
+
