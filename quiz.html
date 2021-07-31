@@ -15,15 +15,15 @@
             <p>QUIZ</p>
         </section>
         <main>
-            <form id="quiz">
+            <form id="quizForm">
                 <div class="question_container">
                     <p clas="question">The kind of triangle which has two equal sides is _______ triangle</p>
                     <div class="question_options">
                         <input type="radio" name="question1" value="equilateral" id="equilateral" required>
                         <label for="equilateral">equilateral</label>
-                        <input type="radio" name="question1" value="isosceles" id="isosceles">
+                        <input type="radio" name="question1" value="isosceles" id="isosceles" required>
                         <label for="isosceles">isosceles</label>
-                        <input type="radio" name="question1" value="scalene" id="scalene">
+                        <input type="radio" name="question1" value="scalene" id="scalene" required>
                         <label for="scalene">scalene </label>
                     </div>
                 </div>
@@ -69,8 +69,9 @@
                         <label for="false_question5">false</label>
                     </div>
                 </div>
+                <button id="btn_quiz_submit" form="quizForm" >Submit</button>
             </form>
-            <button type="submit" form="quiz">Submit</button>
+            
         </main>
 
     </div>
@@ -82,5 +83,6 @@
             </ul>
         </div>
     </footer>
+    <script src="quiz.js"></script>
 </body>
 </html>
