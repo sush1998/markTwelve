@@ -1,4 +1,5 @@
 const answers=["isosceles","one","35mm","55","false"]
+const backToHome=document.querySelector("#back_to_home")
 const quizForm = document.forms[0];
 const questions=document.querySelectorAll(".question_container")
 const btn_quiz_submit=document.querySelector("#btn_quiz_submit")
@@ -28,3 +29,7 @@ quizForm.addEventListener('submit',function(event)
 })
 
 
+backToHome.addEventListener("click",()=>
+{
+    window.location.href="index.html"
+})
