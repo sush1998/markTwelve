@@ -58,4 +58,8 @@ button
         width: 80%;
     }
 
+    .input, .output
+    {
+        display: none;
+    }
 }
