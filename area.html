@@ -14,30 +14,72 @@
             <p id="back_to_home">Back</p>
             <p>Title</p>
         </section>
+        <div class="options_container">
+            <ul class="options">
+                <li class="option_type">
+                    <p id="base">BAse Height</p>
+                </li>
+                <li class="option_type">
+                    <p id="herons">Herons</p>
+                </li>
+                <li class="option_type">
+                    <p id="equilateral">Equilateral</p>
+                </li>
+            </ul>
+        </div>
         <main>
-            <div class="input">
+            <div id="base_input"class="input">
                 <div class="instructions">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, asperiores!
-                    </p>
+                    <p>BASE height</p>
                 </div>
                 <div class="diagram">
                     <p>Diagram here</p>
                 </div>
                 <div class="form_container">
                    <form>
-                       <input id="base" type="number">
-                       <input id="height" type="number">
-                       <button id="calculate_area">Calculate</button>
+                       <input id="base1" type="number">
+                       <input id="height1" type="number">
+                       <button id="btn_calculate_area_baseHeight">Calculate</button>
                    </form>
                 </div>
-
-            </div>
-            <div class="output">            
                 <div class="formula">
                     <p>Area is product of the base and the height of the triangle, and then divide it by two.</p>
                 </div>
-                <p >Area = <span id="out"></span> </p>
-                <p id="result"></p>
+            </div>
+            <div id="herons_input"class="input">
+                <div class="instructions">
+                    <p>HERONS</p>
+                </div>
+                <div class="diagram">
+                    <p>Diagram here</p>
+                </div>
+                <div class="form_container">
+                    <input id="length_a" class="herons_input" type="number">
+                    <input id="length_b" class="herons_input" type="number">
+                    <input id="length_c" class="herons_input" type="number">
+                    <button id="btn_calculate_area_herons">Calculate</button>
+               </div>
+                <div class="formula">
+                    <p>Area is product of the base and the height of the triangle, and then divide it by two.</p>
+                </div>
+            </div>
+            <div id="eqi_input"class="input">
+                <div class="instructions">
+                    <p>Equilateral</p>
+                </div>
+                <div class="diagram">
+                    <p>Diagram here</p>
+                </div>
+                <div class="form_container">
+                    <input id="side_eqi" type="number">
+                    <button id="btn_calculate_area_equilateral">Calculate</button>
+                </div>
+                <div class="formula">
+                    <p>Area is product of the base and the height of the triangle, and then divide it by two.</p>
+                </div>
+            </div>
+            <div class="output">            
+               <p >Area = <span id="out"></span> </p>
             </div>
         </main>
 
@@ -48,8 +90,8 @@
                 <li>LInk</li>
                 <li>LINK</li>
             </ul>
-
         </div>
     </footer>
+    <script src="area.js"></script>
 </body>
 </html>
