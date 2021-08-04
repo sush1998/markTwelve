@@ -17,7 +17,7 @@ const btn_calculate_area_equilateral=document.querySelector("#btn_calculate_area
 function calculateArea_baseHeight(base_length,height_length)
 {
     console.log("calci area")
-    let area=base_length*height_length
+    let area=base_length*height_length/2
     console.log(area)
     out.innerHTML=area
     output.style.display="block"
@@ -36,6 +36,8 @@ function calculate_area_equilateral(side)
 {
     let area=Math.sqrt(3)/4 * (side*side);
     console.log(area)
+    out.textContent=area;
+    output.style.display="block"
 }
 
 btn_calculate_area_baseHeight.addEventListener("click",(event)=>
