@@ -13,6 +13,13 @@ header
     margin: 0;
 }
 
+main{
+    margin-top: 20vh;
+}
+#quiz_main
+{
+    margin-top: 5vh;
+}
 .page_title
 {
     display: grid;
@@ -63,6 +70,9 @@ header
         width: 80%;
         height: 6rem;
         margin: 0.5rem auto;
+    }
+    main{
+        margin-top: 5vh;
     }
 
 }

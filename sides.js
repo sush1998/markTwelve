@@ -3,6 +3,7 @@ const side_b=document.querySelector("#side_b")
 const btn_calculate=document.querySelector("#calculate")
 const backToHome=document.querySelector("#back_to_home")
 const out=document.querySelector("#out")
+const output_div=document.querySelector(".output")
 
 
 function calculateHypo(a,b)
@@ -12,6 +13,7 @@ function calculateHypo(a,b)
     let hypo=Math.sqrt((a*a)+(b*b));
     console.log("hypo :"+hypo)
     out.textContent=hypo
+    output_div.style.display="block"
 }
 
 
