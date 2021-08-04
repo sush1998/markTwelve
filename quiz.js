@@ -3,7 +3,8 @@ const backToHome=document.querySelector("#back_to_home")
 const quizForm = document.forms[0];
 const questions=document.querySelectorAll(".question_container")
 const btn_quiz_submit=document.querySelector("#btn_quiz_submit")
-
+const score_output=document.querySelector("#score")
+const output_div=document.querySelector(".output")
 
 quizForm.addEventListener('submit',function(event)
 {
@@ -26,6 +27,9 @@ quizForm.addEventListener('submit',function(event)
         pos++
     }
     console.log("score :"+score)
+    score_output.textContent=score 
+    output_div.style.display="block"
+
 })
 
 
