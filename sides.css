@@ -32,7 +32,7 @@ button
     grid-column-start: 2;
     
 }
-.input, .output
+.output
 {
     display: none;
 }
@@ -58,7 +58,7 @@ button
         width: 80%;
     }
 
-    .input, .output
+    .output
     {
         display: none;
     }
