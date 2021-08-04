@@ -2,6 +2,7 @@
 body{
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 h1{
@@ -12,17 +13,28 @@ header
 {
     margin: 0;
 }
-
+section
+{
+    margin: 2vh auto 0 auto;
+    width: 60%;
+}
 main{
-    margin-top: 20vh;
+    margin: 10vh auto 0 auto;
+    width: 60%;
+
 }
 #quiz_main
 {
-    margin-top: 5vh;
+    width: 60%;
+    margin: auto;
 }
-#area_main
+#quiz_main>form{
+    width: 80%;
+}
+
+#area_main>*.input
 {
-    margin: 0;
+    margin: 0 auto 0 auto;
 }
 .page_title
 {
@@ -75,8 +87,15 @@ main{
         height: 6rem;
         margin: 0.5rem auto;
     }
-    main{
-        margin-top: 0vh;
+   
+    main,section{
+        margin: auto;
+        width: 80%;
+    }
+    #quiz_main
+    {
+        width: 80%;
+        margin: auto;
     }
 
 }
