@@ -27,11 +27,15 @@ button
 }
 .diagram
 {
-    background-color: gray;
     grid-row: 1/4;
     grid-column-start: 2;
-    
+    height: 200px
 }
+figure,img
+{
+    height: 100%;
+    width: 70%;
+}   
 .output
 {
     display: none;
@@ -50,8 +54,13 @@ button
     .diagram
     {
         width: 100%;
-        height: 10rem;
+        height: 20vh;
     }
+    figure,img
+    {
+        height: 100%;
+        width: 70%;
+    }   
 
     form
     {
@@ -61,5 +70,8 @@ button
     .output
     {
         display: none;
+    }
+    main ,.input{
+        margin-top: 0;
     }
 }

@@ -20,6 +20,10 @@ main{
 {
     margin-top: 5vh;
 }
+#area_main
+{
+    margin: 0;
+}
 .page_title
 {
     display: grid;
@@ -72,7 +76,7 @@ main{
         margin: 0.5rem auto;
     }
     main{
-        margin-top: 5vh;
+        margin-top: 0vh;
     }
 
 }
