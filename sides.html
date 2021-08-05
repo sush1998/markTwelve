@@ -11,15 +11,16 @@
 <body>
     <div class="app">
         <section class="page_title">
-            <p id="back_to_home">Back</p>
+            <div>
+                <p id="back_to_home">Back</p>
+            </div> 
             <p class="heading">Check Hypotenuse</p>
         </section>
         <main>
             <div class="input">
                 <div class="instructions">
                     <p>Hypotenuse is the longest side of a right-angled triangle. It is represented by the side opposite to the right angle. The hypotenuse is related to the other sides of the right triangle by the Pythagoras Theorem.
-                        </p><p>Enter sides and check for hypotenuse
-                    </p>
+                        </p>
                 </div>
                 <div class="diagram">
                     <figure>
@@ -27,12 +28,13 @@
                     </figure>
                 </div>
                 <div class="form_container">
-                   <form>
-                    <label>A :</label>
-                    <input id="side_a" placeholder="Enter length a"="number">
-                    <label>B :</label>
-                    <input id="side_b" placeholder="Enter length b" type="number">
-                    <button id="calculate">Calculate</button>
+                   <form id="formSides">
+                    <p>Enter sides and check for hypotenuse</p>
+                    <label>A :
+                    <input id="side_a" placeholder="Enter length a" type="number" required/></label>
+                    <label>B :
+                    <input id="side_b" placeholder="Enter length b" type="number" required/></label>
+                    <button form="formSides" id="calculate">Calculate</button>
                    </form>
                 </div>
 
