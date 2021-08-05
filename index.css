@@ -1,8 +1,13 @@
-
+:root
+{
+    --blue:#000077;
+    --white:#FFFFFF;
+}
 body{
     margin: 0;
     padding: 0;
     overflow: hidden;
+    background-color: var(--white);
 }
 
 h1{
@@ -31,7 +36,14 @@ main{
 #quiz_main>form{
     width: 80%;
 }
-
+.options_container
+{
+    margin: 0;
+}
+#area_main
+{
+    margin: auto;
+}
 #area_main>*.input
 {
     margin: 0 auto 0 auto;
