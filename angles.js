@@ -6,6 +6,7 @@ const output_div=document.querySelector(".output")
 const result=document.querySelector("#result")
 const check_btn=document.querySelector("#btn_check_angle")
 const backToHome=document.querySelector("#back_to_home")
+const error_msg=document.querySelector("#error_msg")
 
 function check_angles([...angles])
 {
@@ -19,6 +20,7 @@ function validateInput(inputFeild)
 {
     if(inputFeild.value==="")
     {
+        error_msg.innerHTML="Please enter valid inputs."
         inputFeild.focus()
         return false;
     }
@@ -27,6 +29,7 @@ function validateInput(inputFeild)
 
 check_btn.addEventListener('click',(event)=>
 {
+    
     event.preventDefault()
     console.log("clicked")
     let angle1=parseInt(angle_1.value)
@@ -37,6 +40,7 @@ check_btn.addEventListener('click',(event)=>
     let c=validateInput(angle_3)
     if(a===true && b===true && c===true)
     {
+        error_msg.innerHTML=""
         let sum=check_angles([angle1,angle2,angle3])
         output_div.style.display="block"
         if(sum!=180)
