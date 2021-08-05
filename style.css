@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Strait&display=swap');
 :root
 {
     --blue:#000077;
@@ -12,11 +13,19 @@
 #back_to_home
 {
     background-color: var(--blue);
+    width: fit-content;
+    padding: 5px;
     color: var(--white);
+    font-size: larger;
 }
+
 .heading
 {
-    margin-left: 3rem;
+    margin-left: 5rem;
+    font-size: larger;
+    font-weight: 800;
+    font-family: 'Strait', sans-serif;
+    color: var(--blue);
 }
 .options
 {
@@ -56,7 +65,36 @@ figure,img
     height: 100%;
     width: 100%;
     margin: auto;
-}   
+} 
+.form_container
+{
+    margin: auto;
+    padding: 1rem;
+    
+}
+form
+{
+    width: 100%;
+}
+input,button
+{
+    margin: 0.2rem auto;
+    width: 60%;
+} 
+.question_container 
+{
+    margin: 0.5rem auto;
+
+}
+.question_options>input
+{
+    margin: 0.1rem auto 0.1rem 0.5rem;
+    width: fit-content;
+}
+button
+{
+    width: fit-content;
+}
 .output
 {
     display: none;
@@ -67,7 +105,9 @@ figure,img
     
     .heading
     {
-        margin-left: 10px;
+        margin-top: 1.5rem;
+        margin-left: 20px;
+        font-size: x-large;
     }
     .input
     {
@@ -84,8 +124,7 @@ figure,img
     }
     figure{
         height: 100%;
-        width: 7
-        0%;
+        width: 70%;
         margin: auto;
     }   
     img
@@ -95,6 +134,7 @@ figure,img
     form
     {
         width: 80%;
+        margin: auto;
     }
 
     .output

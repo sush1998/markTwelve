@@ -8,6 +8,7 @@ body{
     padding: 0;
     overflow: hidden;
     background-color: var(--white);
+    font-family: 'Strait', sans-serif;
 }
 
 h1{
@@ -25,8 +26,7 @@ section
 }
 main{
     margin: 10vh auto 0 auto;
-    width: 60%;
-
+    width: 50%;
 }
 #quiz_main
 {
@@ -36,6 +36,7 @@ main{
 #quiz_main>form{
     width: 80%;
 }
+
 .options_container
 {
     margin: 0;
@@ -47,6 +48,7 @@ main{
 #area_main>*.input
 {
     margin: 0 auto 0 auto;
+    width: 40%;
 }
 .page_title
 {
@@ -58,12 +60,19 @@ main{
     height: 90vh;
     margin: 0;
 }
-
+.home_title
+{
+    text-align: center;
+    padding: 1rem;
+    font-family: 'Strait', sans-serif;
+    color: var(--blue);
+}
 .menu{
     display: grid;
     justify-content: center;
     width: 100%;
     background-color: white;
+    margin-top: 10%;
 }
 .menu_container
 {
@@ -71,15 +80,39 @@ main{
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
 }
-
+.menu_container>a
+{
+    text-decoration: none;   
+    border-radius: 10px;
+}
+strong
+{
+    font-size: large;
+}
 .menu_item
 {
     overflow: hidden;
     width: 10rem;
     margin: 0.5rem;
     height: 10rem;
-    background-color: red;
+    background-color:var(--blue);
+    color: var(--white);
+    padding: 1rem;
+    border-radius: 10px;
+}
 
+.menu_container>a:hover
+{
+    background-color: var(--blue);
+    font-size: large;
+}
+
+.output>p
+{
+    margin:0.5rem auto;
+    width: fit-content;
+    border: 2px solid #000;
+    padding: 5px;
 }
 
 @media only screen and (max-width:600px)
@@ -92,7 +125,9 @@ main{
         grid-template-rows: auto auto auto auto;
         justify-content: center;
     }
-
+    .menu{
+        margin-top: 0;
+    }
     .menu_item
     {
         width: 80%;
@@ -109,5 +144,7 @@ main{
         width: 80%;
         margin: auto;
     }
+
+
 
 }
