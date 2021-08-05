@@ -15,24 +15,41 @@ function check_angles([...angles])
     
 }
 
+function validateInput(inputFeild)
+{
+    if(inputFeild.value==="")
+    {
+        inputFeild.focus()
+        return false;
+    }
+    return true
+}
+
 check_btn.addEventListener('click',(event)=>
 {
     event.preventDefault()
     console.log("clicked")
     let angle1=parseInt(angle_1.value)
+    let a=validateInput(angle_1)
     let angle2=parseInt(angle_2.value)
+    let b=validateInput(angle_2)
     let angle3=parseInt(angle_3.value)
-    let sum=check_angles([angle1,angle2,angle3])
-    output_div.style.display="block"
-    if(sum!=180)
+    let c=validateInput(angle_3)
+    if(a===true && b===true && c===true)
     {
-        out.innerHTML=sum;
-        result.textContent="Oops! these angles cannot make a triangle"
+        let sum=check_angles([angle1,angle2,angle3])
+        output_div.style.display="block"
+        if(sum!=180)
+        {
+            out.innerHTML=sum;
+            result.textContent="Oops! these angles cannot make a triangle"
+        }
+        else{
+            out.innerHTML=sum
+            result.textContent="Yeah! these angles can make a triangle"
+        }
     }
-    else{
-        out.innerHTML=sum
-        result.textContent="Yeah! these angles can make a triangle"
-    }
+    
 })
 
 
