@@ -110,7 +110,7 @@ strong
     background-color: var(--blue);
     font-size: large;
 }
-#error_msg
+#error_msg ,#error_msg_equi , #error_msg_herons, #error_msg_base
 {
     font-size: small;
     margin: auto;

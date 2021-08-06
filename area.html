@@ -18,7 +18,7 @@
         <div class="options_container">
             
                 <li class="option_type">
-                    <p id="base">BAse Height</p>
+                    <p id="base">Base Height</p>
                 </li>
                 <li class="option_type">
                     <p id="herons">Herons</p>
@@ -36,15 +36,16 @@
                 </div>
                 <div class="diagram">
                     <figure>
-                        <img src="images/area1.png" alt="Hypotenuse diagram">
+                        <img src="images/area1.png" alt="Triangle">
                     </figure>
                 </div>
                 <div class="form_container">
-                   <form>
+                   <form id="form_base">
                        <input id="base1" type="number">
                        <input id="height1" type="number">
-                       <button id="btn_calculate_area_baseHeight">Calculate</button>
+                       <button id="btn_calculate_area_baseHeight" form="form_base">Calculate</button>
                    </form>
+                   <p id="error_msg_base"></p>
                 </div>
                 <div class="formula">
                     <p>Area is product of the base and the height of the triangle, and then divide it by two.</p>
@@ -57,16 +58,17 @@
                 </div>
                 <div class="diagram">
                     <figure>
-                        <img src="images/area2.png" alt="Hypotenuse diagram">
+                        <img src="images/area2.png" alt="Triangle diagram">
                     </figure>
                 </div>
                 <div class="form_container">
-                    <form>
-                        <input id="length_a" class="herons_input" type="number">
-                        <input id="length_b" class="herons_input" type="number">
-                        <input id="length_c" class="herons_input" type="number">
-                        <button id="btn_calculate_area_herons">Calculate</button>
+                    <form id="form_herons">
+                        <input id="length_a" class="herons_input" type="number" required>
+                        <input id="length_b" class="herons_input" type="number" required>
+                        <input id="length_c" class="herons_input" type="number" required>
+                        <button id="btn_calculate_area_herons" form="form_herons">Calculate</button>
                     </form>
+                    <p id="error_msg_herons"></p>
                </div>
                 <div class="formula">
                     <p>The area of the scalene triangle is √s(s-a)(s-b)(s-c), where s = (a + b + c)/2</p>
@@ -81,17 +83,18 @@
                 </div>
                 <div class="diagram">
                     <figure>
-                        <img src="images/area3.png" alt="Hypotenuse diagram">
+                        <img src="images/area3.png" alt="Triangle diagram">
                     </figure>
                 </div>
                 <div class="form_container">
-                    <form>
-                        <input id="side_eqi" type="number">
-                        <button id="btn_calculate_area_equilateral">Calculate</button>
+                    <form id="form_equi">
+                        <input id="side_eqi" type="number" required>
+                        <button id="btn_calculate_area_equilateral" form="form_equi">Calculate</button>
                     </form>
+                    <p id="error_msg_equi"></p>
                 </div>
                 <div class="formula">
-                    <p>he formula to calculate the area of an equilateral triangle is given as, √3/4 × (side)2 square units</p>
+                    <p>The formula to calculate the area of an equilateral triangle is given as, √3/4 × (side)2 square units</p>
                 </div>
             </div>
             <div class="output">            
