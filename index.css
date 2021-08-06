@@ -118,7 +118,7 @@ input,button
 {
     border-radius: 5px;
 }
-#error_msg ,#error_msg_equi , #error_msg_herons, #error_msg_base
+#error_msg ,#error_msg_equi , #error_msg_herons, #error_msg_base , #err_msg_side
 {
     font-size: small;
     margin: auto;
