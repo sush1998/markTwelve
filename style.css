@@ -10,18 +10,21 @@
     grid-template-columns: 60% auto;
     grid-template-rows: auto auto;
 }
+
 #back_to_home
 {
     background-color: var(--blue);
     width: fit-content;
-    padding: 5px;
+    padding: 5px 10px;
     color: var(--white);
     font-size: larger;
+    cursor: pointer;
+    border-radius: 10px;
 }
 
 .heading
 {
-    margin-left: 5rem;
+    text-align: center;
     font-size: larger;
     font-weight: 800;
     font-family: 'Strait', sans-serif;
@@ -29,23 +32,34 @@
 }
 .options_container 
 {
-
     list-style: none;
     text-align: center;
     display: flex;
     justify-content: space-evenly;
     margin: 0 1rem;
 }
+.option_type>p
+{
+    padding: 5px;
+    background-color: var(--blue);
+    color: var(--white);
+    border-radius: 5px;
+    cursor: pointer;
+}
 
 .instructions
 {
     grid-column: 1/2;
-    text-align: justify;
+    width: 100%;
+}
+.instructions>p{
+    padding: 10px;
 }
 .instructions>.sub_heading
 {
     font-size: large;
     font-weight: 600;
+    margin: 0;
 }
 .form_container{
     grid-column: 1/2;
@@ -62,16 +76,28 @@ form
 button
 {
     width: fit-content;
+    background-color: var(--blue);
+    color: var(--white);
 }
 .diagram
 {
+    padding: 10px;
     grid-row: 1/4;
     grid-column-start: 2;
-    height: 200px
+    height: 200px;
+    border: 2px solid #000;
+    border-radius: 10px;
 }
 #area_main>.input
 {
-    width: 15rem;
+    width: 25rem;
+}
+.area_input>.diagram
+{
+    height: 150px;
+    width: 200px;
+    margin: 0 auto;
+    
 }
 figure,img
 {
@@ -123,8 +149,9 @@ button
     
     .heading
     {
+        text-align: left;
         margin-top: 1.5rem;
-        margin-left: 20px;
+        margin-left: 2rem;
         font-size: x-large;
     }
     .input
@@ -154,7 +181,11 @@ button
         width: 80%;
         margin: auto;
     }
-
+    .question_container
+    {
+        margin:0.3rem auto;
+        padding: 7px 2px;
+    }
     .output
     {
         display: none;
@@ -162,4 +193,8 @@ button
     main ,.input{
         margin-top: 0;
     }
+    #area_main>.input
+{
+    width: 15rem;
+}
 }

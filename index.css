@@ -2,12 +2,16 @@
 {
     --blue:#000077;
     --white:#FFFFFF;
+    --green:#93de3f;
+    --red:#ff3b41;
+    --light_blue:#ccdde8
 }
 body{
     margin: 0;
     padding: 0;
     background-color: var(--white);
     font-family: 'Strait', sans-serif;
+    background-color: var(--light_blue)
 }
 
 h1{
@@ -24,8 +28,8 @@ section
     width: 60%;
 }
 main{
-    margin: 10vh auto 0 auto;
-    width: 50%;
+    margin: 0 auto;
+    width: 60%;
 }
 #quiz_main
 {
@@ -33,7 +37,7 @@ main{
     margin: auto;
 }
 #quiz_main>form{
-    width: 80%;
+    width: 100%;
 }
 
 .options_container
@@ -75,7 +79,7 @@ main{
     display: grid;
     justify-content: center;
     width: 100%;
-    background-color: white;
+    background-color: var(--light_blue);
     margin-top: 10%;
 }
 .menu_container
@@ -110,11 +114,16 @@ strong
     background-color: var(--blue);
     font-size: large;
 }
+input,button
+{
+    border-radius: 5px;
+}
 #error_msg ,#error_msg_equi , #error_msg_herons, #error_msg_base
 {
     font-size: small;
     margin: auto;
     text-align: center;
+    color: var(--red);
 }
 .output>p
 {
@@ -122,7 +131,8 @@ strong
     width: fit-content;
     border: 2px solid #000;
     padding: 5px;
-    
+    color: var(--blue);
+    font-weight: 800;
 }
 .formula
 {
