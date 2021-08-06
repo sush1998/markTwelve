@@ -21,7 +21,6 @@ function validateInput(inputFeild)
     if(inputFeild.value==="")
     {
         error_msg.innerHTML="Please enter valid inputs."
-        inputFeild.focus()
         return false;
     }
     return true
@@ -33,16 +32,18 @@ check_btn.addEventListener('click',(event)=>
     event.preventDefault()
     console.log("clicked")
     let angle1=parseInt(angle_1.value)
-    let a=validateInput(angle_1)
     let angle2=parseInt(angle_2.value)
-    let b=validateInput(angle_2)
     let angle3=parseInt(angle_3.value)
-    let c=validateInput(angle_3)
-    if(a===true && b===true && c===true)
+    if(angle_1.value<=0||angle_1.value==""||angle_2.value<=0||angle_2.value==""||angle_3.value<=0||angle_3.value=="")
     {
-        error_msg.innerHTML=""
-        let sum=check_angles([angle1,angle2,angle3])
+        error_msg.textContent="Please enter valid inputs."
+        output_div.style.display="none"
+    }
+    else
+    {
+        error_msg.textContent=""
         output_div.style.display="block"
+        let sum=check_angles([angle1,angle2,angle3])
         if(sum!=180)
         {
             out.innerHTML=sum;
@@ -62,3 +63,4 @@ backToHome.addEventListener("click",()=>
 {
     window.location.href="index.html"
 })
+
