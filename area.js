@@ -52,6 +52,7 @@ btn_calculate_area_baseHeight.addEventListener("click",(event)=>
 
 btn_calculate_area_herons.addEventListener("click",()=>
 {
+    event.preventDefault()
     let s=0
     let sides=[]
     for(let i=0;i<herons_input.length;i++)
@@ -67,6 +68,7 @@ btn_calculate_area_herons.addEventListener("click",()=>
 
 btn_calculate_area_equilateral.addEventListener("click",()=>
 {
+    event.preventDefault()
     let side=parseInt(side_eqi.value)
     calculate_area_equilateral(side)
 })
