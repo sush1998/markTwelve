@@ -5,8 +5,6 @@ const backToHome=document.querySelector("#back_to_home")
 const out=document.querySelector("#out")
 const output_div=document.querySelector(".output")
 
-import {validateInput} from './angles'
-
 function calculateHypo(a,b)
 {
     console.log("calculating")
