@@ -17,6 +17,8 @@ const error_msg_equi=document.querySelector("#error_msg_equi")
 const error_msg_herons=document.querySelector("#error_msg_herons")
 const error_msg_base=document.querySelector("#error_msg_base")
 
+const first_time_text=document.querySelector(".first_time_text")
+
 function calculateArea_baseHeight(base_length,height_length)
 {
     console.log("calci area")
@@ -45,7 +47,9 @@ function calculate_area_equilateral(side)
 
 btn_calculate_area_baseHeight.addEventListener("click",(event)=>
 {
+    
     event.preventDefault()
+    first_time_text.style.display="none"
     console.log("clicked")
     if(base.value===""||height.value==="")
     {
@@ -90,6 +94,7 @@ btn_calculate_area_herons.addEventListener("click",(event)=>
 
 btn_calculate_area_equilateral.addEventListener("click",(event)=>
 {
+    
     event.preventDefault()
     if(side_eqi.value==="")
     {   
@@ -111,6 +116,7 @@ for(let i=0;i<options.length;i++)
 {
    options[i].addEventListener("click",()=>
    {
+       first_time_text.style.display="none"
        console.log(options_main[i].id)
        options_main.forEach(elem=>elem.style.display='none') //hides all
        options_main[i].style.display="block" //show clicked
