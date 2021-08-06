@@ -16,7 +16,7 @@
             <p class="heading">Area of Triangle</p>
         </section>
         <div class="options_container">
-            <ul class="options">
+            
                 <li class="option_type">
                     <p id="base">BAse Height</p>
                 </li>
@@ -26,7 +26,7 @@
                 <li class="option_type">
                     <p id="equilateral">Equilateral</p>
                 </li>
-            </ul>
+            
         </div>
         <main id="area_main">
             <div id="base_input"class="input">
@@ -59,10 +59,12 @@
                     </figure>
                 </div>
                 <div class="form_container">
-                    <input id="length_a" class="herons_input" type="number">
-                    <input id="length_b" class="herons_input" type="number">
-                    <input id="length_c" class="herons_input" type="number">
-                    <button id="btn_calculate_area_herons">Calculate</button>
+                    <form>
+                        <input id="length_a" class="herons_input" type="number">
+                        <input id="length_b" class="herons_input" type="number">
+                        <input id="length_c" class="herons_input" type="number">
+                        <button id="btn_calculate_area_herons">Calculate</button>
+                    </form>
                </div>
                 <div class="formula">
                     <p>The area of the scalene triangle is √s(s-a)(s-b)(s-c), where s = (a + b + c)/2</p>
@@ -78,8 +80,10 @@
                     </figure>
                 </div>
                 <div class="form_container">
-                    <input id="side_eqi" type="number">
-                    <button id="btn_calculate_area_equilateral">Calculate</button>
+                    <form>
+                        <input id="side_eqi" type="number">
+                        <button id="btn_calculate_area_equilateral">Calculate</button>
+                    </form>
                 </div>
                 <div class="formula">
                     <p>he formula to calculate the area of an equilateral triangle is given as, √3/4 × (side)2 square units</p>
