@@ -45,6 +45,11 @@ main{
 {
     margin: auto;
 }
+#area_main>div>.instructions
+{
+    margin: auto;
+    text-align: center;
+}
 #area_main>*.input
 {
     margin: 0 auto 0 auto;
