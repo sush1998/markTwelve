@@ -18,11 +18,11 @@ quizForm.addEventListener('submit',function(event)
         if(elem[1]==answers[pos])
         {
             console.log(elem[1]+"  "+answers[pos])
-            questions[pos].style.backgroundColor="green"
+            questions[pos].style.backgroundColor="#93de3f"
             score++
         }
         else{
-            questions[pos].style.backgroundColor="red"
+            questions[pos].style.backgroundColor="#ff3b41"
         }
         pos++
     }
