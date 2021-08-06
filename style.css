@@ -29,16 +29,23 @@
 }
 .options_container 
 {
+
     list-style: none;
     text-align: center;
     display: flex;
     justify-content: space-evenly;
-    margin: auto;
+    margin: 0 1rem;
 }
 
 .instructions
 {
     grid-column: 1/2;
+    text-align: justify;
+}
+.instructions>.sub_heading
+{
+    font-size: large;
+    font-weight: 600;
 }
 .form_container{
     grid-column: 1/2;
