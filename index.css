@@ -17,7 +17,12 @@ body{
 h1{
     margin: 0;
 }
-
+.fa-play
+{
+    transform: rotate(-90deg);
+    font-size: x-large;
+    margin: 0px 2px 2px 2px;
+}
 header
 {
     margin: 0;
@@ -124,6 +129,10 @@ input,button
     margin: auto;
     text-align: center;
     color: var(--red);
+}
+.first_time_text
+{
+    text-align: center;
 }
 .output>p
 {
