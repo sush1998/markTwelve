@@ -13,6 +13,9 @@ const btn_calculate_area_herons=document.querySelector("#btn_calculate_area_hero
 const side_eqi=document.querySelector("#side_eqi")
 const btn_calculate_area_equilateral=document.querySelector("#btn_calculate_area_equilateral")
 
+const error_msg_equi=document.querySelector("#error_msg_equi")
+const error_msg_herons=document.querySelector("#error_msg_herons")
+const error_msg_base=document.querySelector("#error_msg_base")
 
 function calculateArea_baseHeight(base_length,height_length)
 {
@@ -44,33 +47,62 @@ btn_calculate_area_baseHeight.addEventListener("click",(event)=>
 {
     event.preventDefault()
     console.log("clicked")
+    if(base.value===""||height.value==="")
+    {
+        error_msg_base.textContent="Please enter valid inputs."
+        output.style.display="none"
+        return
+    }
+    error_msg_base.style.display="none"
     let base_length=parseInt(base.value);
     let height_length=parseInt(height.value);
     calculateArea_baseHeight(base_length,height_length)
    
 })
 
-btn_calculate_area_herons.addEventListener("click",()=>
+btn_calculate_area_herons.addEventListener("click",(event)=>
 {
     event.preventDefault()
     let s=0
     let sides=[]
     for(let i=0;i<herons_input.length;i++)
     {
-        s+=parseInt(herons_input[i].value)
-        sides.push(parseInt(herons_input[i].value))
+        if(herons_input[i].value==="")
+        {
+            error_msg_herons.textContent="Please enter valid inputs."
+            output.style.display="none"
+            return
+        }
+        else
+        {   
+            
+            s+=parseInt(herons_input[i].value)
+            sides.push(parseInt(herons_input[i].value))
+        }
+        
     }
+    error_msg_herons.style.display="none"
     s=s/2
     calculate_area_herons(s,sides)
     
 })
 
 
-btn_calculate_area_equilateral.addEventListener("click",()=>
+btn_calculate_area_equilateral.addEventListener("click",(event)=>
 {
     event.preventDefault()
-    let side=parseInt(side_eqi.value)
-    calculate_area_equilateral(side)
+    if(side_eqi.value==="")
+    {   
+        error_msg_equi.textContent="Please enter valid inputs."
+        output.style.display="none"
+        return
+    }
+    else{
+        error_msg_equi.style.display="none"
+        let side=parseInt(side_eqi.value)
+        calculate_area_equilateral(side)
+    }
+    
 })
 
 
