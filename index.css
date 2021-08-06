@@ -154,8 +154,9 @@ footer
     list-style: none;
     margin: auto;
     display: flex;
+    color: var(--blue);
 }
-.social_link , .social_link:visited , .social_link:focus
+.social_link , .social_link:visited , .social_link:link
 {
     margin: 1rem;
     font-size: xx-large;
